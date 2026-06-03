@@ -6,6 +6,10 @@
   "scripts": {
     "format": "prettier --write \"{lib,scripts,test}/**/*.js\"",
     "lint": "eslint bookshelf.js lib/",
+    "api:setup": "node scripts/api-setup.js",
+    "api:start": "node scripts/api-page.js",
+    "mysql:create-db": "node scripts/mysql-create-db.js",
+    "mysql:smoke": "node scripts/mysql-smoke.js",
     "cover": "npm run lint && nyc mocha --check-leaks -t 10000 -b",
     "test": "npm run lint && mocha --check-leaks -t 10000 -b",
     "jsdoc": "./scripts/jsdoc.sh",
