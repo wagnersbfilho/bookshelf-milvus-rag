@@ -28,6 +28,12 @@ function renderPage(books) {
         escapeHtml(book.author) +
         '</td>' +
         '<td>' +
+        escapeHtml(book.category) +
+        '</td>' +
+        '<td>' +
+        escapeHtml(book.description) +
+        '</td>' +
+        '<td>' +
         escapeHtml(book.status) +
         '</td>' +
         '</tr>'
@@ -61,7 +67,7 @@ function renderPage(books) {
     escapeHtml(api.database) +
     ' | Tabela: books | ORM: Bookshelf</p>' +
     '<table>' +
-    '<thead><tr><th>ID</th><th>Titulo</th><th>Autor</th><th>Status</th></tr></thead>' +
+    '<thead><tr><th>ID</th><th>Titulo</th><th>Autor</th><th>Tema</th><th>Descricao</th><th>Status</th></tr></thead>' +
     '<tbody>' +
     rows +
     '</tbody>' +

@@ -8,6 +8,9 @@
     "lint": "eslint bookshelf.js lib/",
     "api:setup": "node scripts/api-setup.js",
     "api:start": "node scripts/api-page.js",
+    "hybrid:setup": "node scripts/hybrid-setup.js",
+    "hybrid:index": "node scripts/hybrid-index-books.js",
+    "hybrid:start": "node scripts/hybrid-page.js",
     "mysql:create-db": "node scripts/mysql-create-db.js",
     "mysql:smoke": "node scripts/mysql-smoke.js",
     "cover": "npm run lint && nyc mocha --check-leaks -t 10000 -b",
@@ -32,7 +35,8 @@
     "bluebird": "^3.7.2",
     "create-error": "~0.3.1",
     "inflection": "^1.12.0",
-    "lodash": "^4.17.15"
+    "lodash": "^4.17.15",
+    "@zilliz/milvus2-sdk-node": "^2.6.0"
   },
   "husky": {
     "hooks": {
